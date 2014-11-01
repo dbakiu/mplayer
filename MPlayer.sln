@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPlayer", "MPlayer\MPlayer.csproj", "{f14dd094-fdcc-4f70-87d4-8cef646d70cf}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F14DD094-FDCC-4F70-87D4-8CEF646D70CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14DD094-FDCC-4F70-87D4-8CEF646D70CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14DD094-FDCC-4F70-87D4-8CEF646D70CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14DD094-FDCC-4F70-87D4-8CEF646D70CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

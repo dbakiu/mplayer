@@ -1,0 +1,207 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="MPlayer.Playlist"
+	x:Name="Window"
+	Title="Playlist"
+	Width="350" Height="250">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FF154B7E" Offset="0"/>
+			<GradientStop Color="#FF063152" Offset="1"/>
+		</LinearGradientBrush>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+		 <Button Margin="120.348,0,0,-2.935" Height="41.87" VerticalAlignment="Bottom" d:LayoutOverrides="GridBox" HorizontalAlignment="Left" Width="41.926">
+        	<Button.Template>
+        		<ControlTemplate TargetType="{x:Type Button}">
+        			<Grid>
+        				<Image x:Name="Normal" Source="Pictures\Add_1.png"/>
+        				<Image x:Name="Pressed" Source="Pictures\Add_2.png" Visibility="Hidden"/>
+        				<Image x:Name="Disabled" Source="Pictures\Add_3.png" Visibility="Hidden"/>
+        			</Grid>
+        			<ControlTemplate.Triggers>
+        				<Trigger Property="IsPressed" Value="True">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        				<Trigger Property="IsEnabled" Value="False">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        			</ControlTemplate.Triggers>
+        		</ControlTemplate>
+        	</Button.Template>
+        </Button>
+		<ListBox Margin="8,8,0,34" HorizontalAlignment="Left" Width="318" d:LayoutOverrides="VerticalAlignment" Background="Black">
+			<ListBoxItem Content="Moloko - Over and over" Height="16.96" Style="{DynamicResource ListBoxItemStyle1}" FontFamily="Steelfish" Foreground="White" Width="310" BorderThickness="0,0,0,2" Background="{x:Null}">
+				<ListBoxItem.Resources>
+					<Style x:Key="ListBoxItemStyle1" TargetType="{x:Type ListBoxItem}">
+						<Setter Property="Background" Value="Transparent"/>
+						<Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="Padding" Value="2,0,0,0"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type ListBoxItem}">
+									<Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+									</Border>
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsSelected" Value="true">
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsSelected" Value="true"/>
+												<Condition Property="Selector.IsSelectionActive" Value="false"/>
+											</MultiTrigger.Conditions>
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+										</MultiTrigger>
+										<Trigger Property="IsEnabled" Value="false">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+										</Trigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ListBoxItem.Resources>
+			</ListBoxItem>
+			<ListBoxItem Content="Moloko - Fun for me" Height="16.96" Style="{DynamicResource ListBoxItemStyle1}" FontFamily="Steelfish" Foreground="White" Width="310" BorderThickness="0,0,0,2" Opacity="0.975" Background="{x:Null}">
+				<ListBoxItem.Resources>
+					<Style x:Key="ListBoxItemStyle1" TargetType="{x:Type ListBoxItem}">
+						<Setter Property="Background" Value="Transparent"/>
+						<Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="Padding" Value="2,0,0,0"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type ListBoxItem}">
+									<Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+									</Border>
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsSelected" Value="true">
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsSelected" Value="true"/>
+												<Condition Property="Selector.IsSelectionActive" Value="false"/>
+											</MultiTrigger.Conditions>
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+										</MultiTrigger>
+										<Trigger Property="IsEnabled" Value="false">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+										</Trigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ListBoxItem.Resources>
+			</ListBoxItem>
+			<ListBoxItem Content="Moloko - Sing it back" Height="16.96" Style="{DynamicResource ListBoxItemStyle1}" FontFamily="Steelfish" Foreground="White" Width="310" BorderThickness="0,0,0,2" Background="{x:Null}">
+				<ListBoxItem.Resources>
+					<Style x:Key="ListBoxItemStyle1" TargetType="{x:Type ListBoxItem}">
+						<Setter Property="Background" Value="Transparent"/>
+						<Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="Padding" Value="2,0,0,0"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type ListBoxItem}">
+									<Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+									</Border>
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsSelected" Value="true">
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsSelected" Value="true"/>
+												<Condition Property="Selector.IsSelectionActive" Value="false"/>
+											</MultiTrigger.Conditions>
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+										</MultiTrigger>
+										<Trigger Property="IsEnabled" Value="false">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+										</Trigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ListBoxItem.Resources>
+			</ListBoxItem>
+			<ListBoxItem Content="Moloko - Familiar feeling" Height="16.96" Style="{DynamicResource ListBoxItemStyle1}" FontFamily="Steelfish" Foreground="White" Width="310" BorderThickness="0,0,0,2" Background="{x:Null}">
+				<ListBoxItem.Resources>
+					<Style x:Key="ListBoxItemStyle1" TargetType="{x:Type ListBoxItem}">
+						<Setter Property="Background" Value="Transparent"/>
+						<Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+						<Setter Property="Padding" Value="2,0,0,0"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type ListBoxItem}">
+									<Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+									</Border>
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsSelected" Value="true">
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsSelected" Value="true"/>
+												<Condition Property="Selector.IsSelectionActive" Value="false"/>
+											</MultiTrigger.Conditions>
+											<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+										</MultiTrigger>
+										<Trigger Property="IsEnabled" Value="false">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+										</Trigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ListBoxItem.Resources>
+			</ListBoxItem>
+		</ListBox>
+		<Button Margin="0,0,120.348,-2.935" Height="41.87" VerticalAlignment="Bottom" d:LayoutOverrides="GridBox" HorizontalAlignment="Right" Width="41.926">
+			<Button.Template>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Grid>
+						<Image x:Name="Normal" Source="Pictures/Remove_1.png"/>
+						<Image x:Name="Pressed" Source="Pictures/Remove_2.png" Visibility="Hidden"/>
+						<Image x:Name="Disabled" Source="Pictures/Remove_3.png" Visibility="Hidden"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsPressed" Value="True">
+							<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+							<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="False">
+							<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+							<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Button.Template>
+		</Button>
+	</Grid>
+	
+</Window>

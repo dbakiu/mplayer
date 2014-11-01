@@ -1,0 +1,272 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ee="http://schemas.microsoft.com/expression/2010/effects" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	x:Class="MPlayer.MainWindow"
+	x:Name="Window"
+	Title="Magde Player"
+	Width="570" Height="197" Background="{x:Null}" mc:Ignorable="d">
+
+	<Grid x:Name="LayoutRoot" HorizontalAlignment="Right" Width="570" Height="159" VerticalAlignment="Bottom" Margin="0,0,0,0">
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+				<GradientStop Color="#FF095F76"/>
+				<GradientStop Color="#FF082A56" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background> 
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.537*"/>
+			<RowDefinition Height="0.463*"/>
+			<RowDefinition Height="0" MaxHeight="250"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>  
+			<ColumnDefinition Width="285" />
+			<ColumnDefinition Width="285" />
+		</Grid.ColumnDefinitions>
+		<Label Margin="0,0,73.053,15" Grid.Column="1" Foreground="White" Height="21.333" VerticalAlignment="Bottom" Grid.Row="1" Content="Volume" FontFamily="Segoe UI" FontSize="9.333" Opacity="0.545" HorizontalAlignment="Right" Width="45" d:LayoutOverrides="VerticalAlignment"/>
+		<Label Margin="0,4.431,70.07,0" Foreground="White" Height="30.667" VerticalAlignment="Top" Content="Playing:" FontFamily="Tekton Pro" FontSize="16.667" Opacity="0.545" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="70.333"/>
+		<Label Margin="164.355,31.334,6.312,0" Foreground="White" Height="30.667" VerticalAlignment="Top" Content="Recommended:" FontFamily="Tekton Pro" FontSize="11.667" Opacity="0.545"/>
+        <Button Margin="0,-8.892,21.123,0" HorizontalAlignment="Right" Height="34.784" VerticalAlignment="Top" Width="38.263" Grid.Row="1">
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+        			<GradientStop Color="#FFB8B8B8" Offset="1"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+            <Button.Template>
+      <ControlTemplate TargetType="{x:Type Button}">
+         <Grid>
+            <Image Name="Normal" Source="Pictures\Play_State1.png"/>
+            <Image Name="Pressed" Source="Pictures\Play_State2.png" Visibility="Hidden"/>
+            <Image Name="Disabled" Source="Pictures\Play_State3.png" Visibility="Hidden"/>
+         </Grid>
+         <ControlTemplate.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+               <Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+               <Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+               <Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+               <Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+            </Trigger>
+         </ControlTemplate.Triggers>
+      </ControlTemplate>
+   </Button.Template>
+        </Button>
+        <ToggleButton Margin="0,-8.892,-17.433,0" HorizontalAlignment="Right" Height="34.784" VerticalAlignment="Top" Width="35.745" Grid.Row="1">
+        	<ToggleButton.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+        			<GradientStop Color="White" Offset="1"/>
+        		</LinearGradientBrush>
+        	</ToggleButton.Background>
+        	<ToggleButton.Template>
+        		<ControlTemplate TargetType="{x:Type ToggleButton}">
+        			<Grid>
+        				<Image x:Name="Normal" Source="Pictures\Pause_State1.png"/>
+        				<Image x:Name="Pressed" Source="Pictures\Pause_State2.png" Visibility="Hidden"/>
+        				<Image x:Name="Disabled" Source="Pictures\Pause_State3.png" Visibility="Hidden"/>
+        			</Grid>
+        			<ControlTemplate.Triggers>
+        				<Trigger Property="IsPressed" Value="True">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        				<Trigger Property="IsEnabled" Value="False">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        			</ControlTemplate.Triggers>
+        		</ControlTemplate>
+        	</ToggleButton.Template>
+        </ToggleButton>
+        <Button Margin="30.274,-8.892,0,0" HorizontalAlignment="Left" Width="34.83" Grid.Column="1" Height="34.784" VerticalAlignment="Top" Grid.Row="1">
+        	<Button.Template>
+        		<ControlTemplate TargetType="{x:Type Button}">
+        			<Grid>
+        				<Image x:Name="Normal" Source="Pictures\Stop_State1.png"/>
+        				<Image x:Name="Pressed" Source="Pictures\Stop_State2.png" Visibility="Hidden"/>
+        				<Image x:Name="Disabled" Source="Pictures\Stop_State3.png" Visibility="Hidden"/>
+        			</Grid>
+        			<ControlTemplate.Triggers>
+        				<Trigger Property="IsPressed" Value="True">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        				<Trigger Property="IsEnabled" Value="False">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        			</ControlTemplate.Triggers>
+        		</ControlTemplate>
+        	</Button.Template>
+        </Button>
+        <Slider Margin="0,-36.538,82.437,0" Foreground="White" Cursor="Arrow" OpacityMask="{DynamicResource NormalBorderBrush}" BorderThickness="0" Grid.Column="1" RenderTransformOrigin="0.511,0.501" HorizontalAlignment="Right" Width="24.839" Orientation="Vertical" Height="76.087" VerticalAlignment="Top" Background="#00000000" Grid.Row="1" >
+        	<Slider.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform Angle="0.458"/>
+        			<TranslateTransform X="-1.001" Y="-1.067"/>
+        		</TransformGroup>
+        	</Slider.RenderTransform>
+        </Slider>
+		 <ToggleButton Margin="28.667,25,0,15" HorizontalAlignment="Left" Width="48.053" Grid.Row="1" RenderTransformOrigin="-1.338,1.069">
+        	<ToggleButton.Template>
+        		<ControlTemplate TargetType="{x:Type ToggleButton}">
+        			<Grid>
+        				<Image x:Name="Normal" Source="Pictures/Playlist.png"/>
+        				<Image x:Name="Pressed" Source="Pictures/Playlist_2.png" Visibility="Hidden"/>
+        				<Image x:Name="Disabled" Source="Pictures/Playlist_3.png" Visibility="Hidden"/>
+        			</Grid>
+        			<ControlTemplate.Triggers>
+        				<Trigger Property="IsPressed" Value="True">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        				<Trigger Property="IsEnabled" Value="False">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        			</ControlTemplate.Triggers>
+        		</ControlTemplate>
+        	</ToggleButton.Template>
+        </ToggleButton>
+        <ToggleButton Margin="0,0,18.436,15" HorizontalAlignment="Right" RenderTransformOrigin="-1.338,1.069" VerticalAlignment="Bottom" Grid.Row="1" Height="36.617" Width="28.617" Opacity="0.825" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment">
+        	<ToggleButton.Template>
+        		<ControlTemplate TargetType="{x:Type ToggleButton}">
+        			<Grid>
+        				<Image x:Name="Normal" Source="Pictures/Mute_1.png"/>
+        				<Image x:Name="Pressed" Source="Pictures/Mute_2.png" Visibility="Hidden"/>
+        				<Image x:Name="Disabled" Source="Pictures/Playlist_3.png" Visibility="Hidden"/>
+        			</Grid>
+        			<ControlTemplate.Triggers>
+        				<Trigger Property="IsPressed" Value="True">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        				<Trigger Property="IsEnabled" Value="False">
+        					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+        					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+        				</Trigger>
+        			</ControlTemplate.Triggers>
+        		</ControlTemplate>
+        	</ToggleButton.Template>
+        </ToggleButton>
+        <Label Margin="-86.406,0,104.738,52.376" Foreground="White" Height="33.007" VerticalAlignment="Bottom" Content="Moloko - Over and over" FontFamily="Tunga" FontSize="18" Grid.Column="1"/>
+           <Label Margin="-45.7,0,104.03,26.629" Foreground="White" Height="33.007" VerticalAlignment="Bottom" Content="Moloko - Forever more" FontFamily="Tunga" FontSize="15.333" Grid.Column="1"/>
+           <Button Margin="0,-7.074,74.07,0" HorizontalAlignment="Right" Height="31.148" VerticalAlignment="Top" Width="34.263" Grid.Row="1">
+           	<Button.Background>
+           		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+           			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+           			<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+           			<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+           			<GradientStop Color="#FFB8B8B8" Offset="1"/>
+           		</LinearGradientBrush>
+           	</Button.Background>
+           	<Button.Template>
+           		<ControlTemplate TargetType="{x:Type Button}">
+           			<Grid>
+           				<Image x:Name="Normal" Source="Pictures/Previous_1.png"/>
+           				<Image x:Name="Pressed" Source="Pictures/Previous_2.png" Visibility="Hidden"/>
+           				<Image x:Name="Disabled" Source="Pictures/Previous_3.png" Visibility="Hidden"/>
+           			</Grid>
+           			<ControlTemplate.Triggers>
+           				<Trigger Property="IsPressed" Value="True">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           				<Trigger Property="IsEnabled" Value="False">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           			</ControlTemplate.Triggers>
+           		</ControlTemplate>
+           	</Button.Template>
+           </Button>
+           <Button Margin="87.352,-7.074,0,0" HorizontalAlignment="Left" Height="31.148" VerticalAlignment="Top" Width="34.263" Grid.Column="1" Grid.Row="1">
+           	<Button.Background>
+           		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+           			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+           			<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+           			<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+           			<GradientStop Color="#FFB8B8B8" Offset="1"/>
+           		</LinearGradientBrush>
+           	</Button.Background>
+           	<Button.Template>
+           		<ControlTemplate TargetType="{x:Type Button}">
+           			<Grid>
+           				<Image x:Name="Normal" Source="Pictures/Next_1.png"/>
+           				<Image x:Name="Pressed" Source="Pictures/Next_2.png" Visibility="Hidden"/>
+           				<Image x:Name="Disabled" Source="Pictures/Next_3.png" Visibility="Hidden"/>
+           			</Grid>
+           			<ControlTemplate.Triggers>
+           				<Trigger Property="IsPressed" Value="True">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           				<Trigger Property="IsEnabled" Value="False">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           			</ControlTemplate.Triggers>
+           		</ControlTemplate>
+           	</Button.Template>
+           </Button>
+           <Button Margin="0,0,13.767,40.434" HorizontalAlignment="Right" Width="43.241" Grid.Column="1" Opacity="0.675">
+           	<Button.Template>
+           		<ControlTemplate TargetType="{x:Type Button}">
+           			<Grid>
+           				<Image x:Name="Normal" Source="Pictures/About_1.png"/>
+           				<Image x:Name="Pressed" Source="Pictures/About_2.png" Visibility="Hidden"/>
+           				<Image x:Name="Disabled" Source="Pictures/Playlist_3.png" Visibility="Hidden"/>
+           			</Grid>
+           			<ControlTemplate.Triggers>
+           				<Trigger Property="IsPressed" Value="True">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           				<Trigger Property="IsEnabled" Value="False">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           			</ControlTemplate.Triggers>
+           		</ControlTemplate>
+           	</Button.Template>
+           </Button>
+           <Label Margin="-24.312,32.331,256.476,0" Foreground="White" Height="30.667" VerticalAlignment="Top" Content="03:25" FontFamily="Trebuchet MS" FontSize="16" Opacity="0.545" Grid.Row="1" Grid.Column="1"/>
+           <Button Margin="0,0,-11.729,12.723" HorizontalAlignment="Right" Width="25.863" Height="23.51" VerticalAlignment="Bottom">
+           	<Button.Background>
+           		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+           			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+           			<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+           			<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+           			<GradientStop Color="#FFB8B8B8" Offset="1"/>
+           		</LinearGradientBrush>
+           	</Button.Background>
+           	<Button.Template>
+           		<ControlTemplate TargetType="{x:Type Button}">
+           			<Grid>
+           				<Image x:Name="Normal" Source="Pictures/Next_R_1.png"/>
+           				<Image x:Name="Pressed" Source="Pictures/Next_R_2.png" Visibility="Hidden"/>
+           				<Image x:Name="Disabled" Source="Pictures/Play_State3.png" Visibility="Hidden"/>
+           			</Grid>
+           			<ControlTemplate.Triggers>
+           				<Trigger Property="IsPressed" Value="True">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Pressed" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           				<Trigger Property="IsEnabled" Value="False">
+           					<Setter TargetName="Normal" Property="Visibility" Value="Hidden"/>
+           					<Setter TargetName="Disabled" Property="Visibility" Value="Visible"/>
+           				</Trigger>
+           			</ControlTemplate.Triggers>
+           		</ControlTemplate>
+           	</Button.Template>
+           </Button>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="MPlayer.About"
+	x:Name="Window"
+	Title="About"
+	Width="350" Height="180" BorderBrush="White" BorderThickness="1">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FF165E83" Offset="0"/>
+			<GradientStop Color="#FF082635" Offset="0.991"/>
+		</LinearGradientBrush>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Label Margin="36.16,61,35,16" Content="Magde Player е дело на ИКИ/ИНФО тимот&#xd;&#xa;составен од:&#xd;&#xa;- Филип Митровски - 436/2008&#xd;&#xa;- Дритон Бакиу - 929/2009" Foreground="White" FontSize="10.667" TextOptions.TextFormattingMode="Display"/>
+		<Image Margin="124.16,0,123,55" Source="Pictures/M_player.png" Stretch="Fill"/>
+	</Grid>
+</Window>

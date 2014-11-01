@@ -1,0 +1,80 @@
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\MPlayer.exe
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\MPlayer.pdb
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MainWindow.baml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\Playlist.baml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\Simple Styles.baml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\App.baml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MainWindow.g.cs
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\Playlist.g.cs
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\App.g.cs
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MPlayer_MarkupCompile.cache
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MPlayer.g.resources
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MPlayer.exe
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\MPlayer.pdb
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\About.baml
+C:\Users\Driton\Documents\Expression\Blend 4\Projects\MPlayer\MPlayer\obj\Debug\About.g.cs
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MPlayer.exe
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MPlayer.pdb
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\MPlayer.exe
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\MPlayer.pdb
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MPlayer.csprojResolveAssemblyReference.cache
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\About.baml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MainWindow.baml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\Playlist.baml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\Simple Styles.baml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\App.baml
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\About.g.cs
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MainWindow.g.cs
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\Playlist.g.cs
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\App.g.cs
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MPlayer_MarkupCompile.cache
+C:\Users\Driton\Desktop\MPlayer\MPlayer\obj\Debug\MPlayer.g.resources
